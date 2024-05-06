@@ -5,6 +5,23 @@
 
 Developer: Chelsea (Jiyuan) Lyu - jl1230,
            Jingxuan Li - jl1226
+           
+This project involves the creation of an HTTP proxy server in C++. The proxy forwards requests to an origin server on behalf of a client, caches responses, and serves cached copies of resources when appropriate.
+
+## Features
+
+- **Request Handling**: Supports GET, POST, and CONNECT methods. Other HTTP methods may be handled optionally.
+- **Caching**: Implements caching for 200-OK responses to GET requests, with expiration and re-validation policies.
+- **Concurrency**: Handles multiple concurrent requests using multiple threads. Implements thread safety for shared cache access.
+- **Logging**: Generates detailed logs for each request, including request handling, cache status, and errors, saved in `/var/log/erss/proxy.log`.
+
+## Technical Details
+
+- **Programming Language**: C++
+- **Key Concepts**: Object-Oriented Design, RAII, Exceptions.
+- **Robustness**: Handles external failures gracefully and ensures robustness against malformed requests and responses.
+
+
 
 ### Docker Set up
 
